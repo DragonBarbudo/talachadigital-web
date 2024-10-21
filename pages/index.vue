@@ -35,9 +35,7 @@ useHead({
 </script>
 
 <template>
-  <ContactBar />
-  <!--topbar-->
-  <TopBar />
+  
   <!--head-->
   <div class="relative z-50">
     <div class="bg-tdgreen p-5 text-center">
@@ -119,16 +117,6 @@ useHead({
     </div>
   </HomeBackgroundVideo>
 
-<HomeOurSocials></HomeOurSocials>
 
-
-<!--footer-->
-<footer class="relative z-50">
-    <div class="bg-gray-100 p-5 text-center">
-      <NuxtImg src="/img/talachadigital.svg" class="mx-auto w-1/3 max-w-40" />
-    </div>
-  </footer>
-
-<div class="text-xs p-2 text-center font-patrick">Nada esta registrado. Todo es de todos y somos compartidos.</div>
   
 </template>
