@@ -1,0 +1,3 @@
+<template>
+   Menú digital!
+</template>

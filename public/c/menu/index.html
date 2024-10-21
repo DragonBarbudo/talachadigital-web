@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú - La Cafetería</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom Tailwind styles */
+    @layer base {
+      h1 {
+        font-family: 'Great Vibes', cursive;
+      }
+      h2, p, li {
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#fff1db] text-gray-800">
+  <div class="container mx-auto p-6">
+    <!-- Header -->
+    <div class="text-center">
+      <h1 class="text-6xl font-bold text-[#071e49]">La Cafetería</h1>
+      <p class="text-lg text-[#071e49] tracking-wider">TU MEJOR CAFÉ</p>
+    </div>
+  </div>
+
+  <!-- Menú -->
+  <div class="mt-10 px-5 container max-w-6xl mx-auto flex flex-col md:grid  md:grid-cols-2 flex-wrap gap-8 text-center">
+    <!-- Café caliente -->
+    <div>
+      <h2 class="text-2xl font-semibold text-[#d8573c] mb-4">Café Caliente</h2>
+      <ul class="space-y-2">
+        <li class="flex gap-4 justify-between"><span>Capuchino</span> <span>$45.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Americano</span> <span>$35.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Espresso</span> <span>$30.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Macchiato</span> <span>$40.00</span></li>
+      </ul>
+    </div>
+
+    <!-- Café Frío -->
+    <div>
+      <h2 class="text-2xl font-semibold text-[#d8573c] mb-4">Café Frío</h2>
+      <ul class="space-y-2">
+        <li class="flex gap-4 justify-between"><span>Ice Capuchino</span> <span>$50.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Ice Americano</span> <span>$40.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Ice Espresso</span> <span>$35.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Ice Macchiato</span> <span>$45.00</span></li>
+      </ul>
+    </div>
+
+    <!-- Infusiones y otros -->
+    <div>
+      <h2 class="text-2xl font-semibold text-[#fbc12f] mb-4">Infusiones y otros</h2>
+      <ul class="space-y-2">
+        <li class="flex gap-4 justify-between"><span>Té en hebras</span> <span>$30.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Submarino</span> <span>$40.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Chocolate caliente</span> <span>$45.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Chicha venezolana</span> <span>$50.00</span></li>
+      </ul>
+    </div>
+
+    <!-- Jugos y Refrescos -->
+    <div>
+      <h2 class="text-2xl font-semibold text-[#fbc12f] mb-4">Jugos y Refrescos</h2>
+      <ul class="space-y-2">
+        <li class="flex gap-4 justify-between"><span>Limonada con menta</span> <span>$35.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Pomelada con menta</span> <span>$35.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Pomelo y limón</span> <span>$40.00</span></li>
+        <li class="flex gap-4 justify-between"><span>Frutilla y limón</span> <span>$40.00</span></li>
+      </ul>
+    </div>
+
+    <!-- Para Comer -->
+    <div class="col-span-2">
+      <div class="bg-[#ff6b6b] p-4 rounded-lg">
+        <h2 class="text-2xl font-semibold text-white mb-4">Para Comer</h2>
+        <ul class="space-y-2 text-white">
+          <li class="flex gap-4 justify-between"><span>Sándwich de queso</span> <span>$55.00</span></li>
+          <li class="flex gap-4 justify-between"><span>Donas rellenas</span> <span>$30.00</span></li>
+          <li class="flex gap-4 justify-between"><span>Galletas con chips</span> <span>$25.00</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

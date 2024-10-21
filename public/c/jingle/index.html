@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jingle para tu empresa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+    .play-button {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background-color: #d6fd18;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+      z-index: 999;
+    }
+    .play-button svg {
+      width: 80px;
+      height: 80px;
+      fill: black;
+    }
+    .hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="play-button" id="playButton">
+    <svg viewBox="0 0 24 24">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  </div>
+
+  <video preload="none" poster="poster.webp"  id="persianasVideo" src="persianas.mp4" loop></video>
+
+  <script>
+    const video = document.getElementById('persianasVideo');
+    const playButton = document.getElementById('playButton');
+    
+    // Play/pause the video when play button is clicked
+    playButton.addEventListener('click', () => {
+      video.play();
+      playButton.classList.add('hidden');
+    });
+
+    // Show play button when video is paused
+    video.addEventListener('pause', () => {
+      playButton.classList.remove('hidden');
+    });
+
+    // Hide play button when video is playing
+    video.addEventListener('play', () => {
+      playButton.classList.add('hidden');
+    });
+
+    // Pause video when it's clicked
+    video.addEventListener('click', () => {
+      if (!video.paused) {
+        video.pause();
+      }
+    });
+  </script>
+
+</body>
+</html>
