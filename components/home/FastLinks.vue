@@ -11,9 +11,10 @@
         <div class="w-full font-gochi text-3xl text-center">Accesos rápidos:</div>
         
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-5 gap-5">
+        <!--<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-5 gap-5">-->
+        <div class="flex flex-wrap justify-center p-5 gap-5">
           
-            <NuxtLink :to="item.to" class="shadow-2xl group transition-all hover:scale-110 border-b-4 border-b-black rounded-xl  bg-tdgreen p-1  hover:bg-tdred hover:text-tdgreen "  v-for="(item, index) in links">
+            <NuxtLink :to="item.to" class="w-96 shadow-2xl group transition-all hover:scale-110 border-b-4 border-b-black rounded-xl  bg-tdgreen p-1  hover:bg-tdred hover:text-tdgreen "  v-for="(item, index) in links">
                     <div class="bg-black/10 transition-all delay-100 h-full p-1 flex gap-2 items-center rounded-lg border-4 border-black shadow-sm group-hover:bg-black">
                         <NuxtImg :src="item.img" class="w-11/12  aspect-square object-contain"/>
                         <div>
@@ -47,6 +48,7 @@ const links = [
         title: 'Sitio web informativo',
         description: 'Funcionales y atractivos que representan tu negocio y te acercan a tus clientes, ¡hechos a la medida! '
     },
+    /*
     {
         img: '/img/fast-brand.webp',
         to: '/logo-marca',
@@ -59,6 +61,7 @@ const links = [
         title: 'Videos, tiktoks y reels',
         description: 'Atrae y engancha en redes sociales. Ideal para viralizar tus mensajes.'
     },
+    */
     {
         img: '/img/fast-dare.webp',
         to: '/reto',

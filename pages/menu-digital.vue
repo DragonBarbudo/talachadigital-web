@@ -1,5 +1,9 @@
 <template>
-   
+   <div class="bg-tdgreen w-full">
+      <NuxtLink to="/" class=" p-2 text-center cursor-pointer group">
+         <NuxtImg src="/img/talachadigital.svg" class="mx-auto max-w-32 group-hover:scale-110" />
+      </NuxtLink>
+   </div>
    <div class="bg-tdgreen py-20 px-2  flex justify-center items-center">
       <div class="grid grid-cols-2 gap-1 items-center w-fit mx-auto">
          <div class="aspect-square">
@@ -63,32 +67,32 @@
       <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
 
          <div class="bg-tdgreen text-center p-3 flex flex-col gap-5">
-            <NuxtImg src="/img/menu-digital/panel.webp" class="w-full" />
+            <NuxtImg src="/img/menu-digital/panel.webp" class="w-full max-w-60 mx-auto" />
             <div class="font-nerko text-2xl md:text-3xl leading-5">Modificaciones infinitas</div>
             <div class="font-patrick text-lg leading-5">Tu menú incluye un panel desde donde podrás modificarlo todas las veces que lo requieras, editando categorías, platillos, precios y fotos.</div>
          </div>
          <div class="bg-tdpink text-center p-3 flex flex-col gap-5">
-            <NuxtImg src="/img/menu-digital/comodo.webp" class="w-full" />
+            <NuxtImg src="/img/menu-digital/comodo.webp" class="w-full max-w-60 mx-auto" />
             <div class="font-nerko text-2xl md:text-3xl leading-5">Pensado para todos</div>
             <div class="font-patrick text-lg leading-5">¡Es un menú intuitivo. Diseñado para ser fácil y simple! Es cómodo hasta para los que prefieren cartas impresas.</div>
          </div>
          <div class="bg-tdorange text-center p-3 flex flex-col gap-5">
-            <NuxtImg src="/img/menu-digital/personalizado.webp" class="w-full" />
+            <NuxtImg src="/img/menu-digital/personalizado.webp" class="w-full max-w-60 mx-auto" />
             <div class="font-nerko text-2xl md:text-3xl leading-5">Menú y QR Personalizados</div>
             <div class="font-patrick text-lg leading-5">Tu menú digital representa fielmente a tu marca. Colores, fotos y fuentes que lo hacen tuyo.</div>
          </div>
          <div class="bg-tdred text-center p-3 flex flex-col gap-5">
-            <NuxtImg src="/img/menu-digital/rapido.webp" class="w-full" />
+            <NuxtImg src="/img/menu-digital/rapido.webp" class="w-full max-w-60 mx-auto" />
             <div class="font-nerko text-2xl md:text-3xl leading-5">El menú más rápido en cargar</div>
             <div class="font-patrick text-lg leading-5">¡Este menú digital carga rápido! Esta programado para ser veloz y mostrar tus platillos casi inmediatamente.</div>
          </div>
          <div class="bg-tdgreen text-center p-3 flex flex-col gap-5">
-            <NuxtImg src="/img/menu-digital/adaptable.webp" class="w-full" />
+            <NuxtImg src="/img/menu-digital/adaptable.webp" class="w-full max-w-60 mx-auto" />
             <div class="font-nerko text-2xl md:text-3xl leading-5">Para cualquier dispositivo</div>
             <div class="font-patrick text-lg leading-5">No es una imagen y ya...! Convertimos tu menú palabra por palabra en código para presentar a tus clientes un menú de alta calidad.</div>
          </div>
          <div class="bg-black text-white text-center p-3 flex flex-col gap-5">
-            <NuxtImg src="/img/menu-digital/futuro.webp" class="w-full" />
+            <NuxtImg src="/img/menu-digital/futuro.webp" class="w-full max-w-60 mx-auto" />
             <div class="font-nerko text-2xl md:text-3xl leading-5">Un menú digital con futuro</div>
             <div class="font-patrick text-lg leading-5">Integramos semana tras semana nuevas funciones y aditamentos que lo hacen el mejor menú digital del mundo.</div>
          </div>
@@ -135,7 +139,39 @@
 
    </section>
 
+
+
+   <section class="bg-white px-5 py-10 ">
+      <div class="text-center font-gochi text-5xl md:text-8xl">¿Cómo pido mi menú digital... y cuánto cuesta?</div>
+      <div class="text-center font-patrick text-2xl my-5">
+         ¡Súuuper! Requerimos lo más mínimo para comenzar:
+      </div>
+      <div class="grid md:grid-cols-2 gap-4   p-5  font-patrick text-xl md:text-3xl">
+         <ul class="bg-tdgreen p-5">
+            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" /> Nombre de tu restaurante.</li>
+            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" />Logotipo.</li>
+            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" />Teléfono.</li>
+            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" />Dirección.</li>
+            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" />Correo electrónico.</li>
+            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" />Tu menú actual.</li>
+            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" />Y cualquier otra información que quieras mostrar en tu menú digital.</li>
+         </ul>
+         <div class="bg-tdgreen flex flex-col">
+            <div class="h-1/2 p-5 ">
+               Mándanos tu información por <NuxtLink class="text-tdred hover:text-black" href="https://wa.me/message/GSQFJRMWMO76P1?src=qr" target="_blank">Whatsapp</NuxtLink> y en un día tendremos listo tu menú!
+            </div>
+            <div class="grow bg-black text-white p-5 ">
+               El precio durante la etapa de introducción es de <span class="font-nerko text-tdgreen">$700 pesos mexicanos</span> por un tiempo de 999999 días (o sea por siempre) y puedes pagar hasta que te entreguemos.
+            </div>
+
+         </div>
+      </div>
+   </section>
+
    
+   <div class="m-10 text-center">
+      <NuxtImg src="/img/menu-digital/expert.webp" class="mx-auto" />
+   </div>
 
 
 

@@ -24,6 +24,7 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     'nuxt-umami',
     '@nuxt/icon',
-    '@nuxt/image'
+    '@nuxt/image',
+    'nuxt-lazytube'
   ]
 })
