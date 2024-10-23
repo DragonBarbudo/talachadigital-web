@@ -64,7 +64,7 @@ const links = [
     */
     {
         img: '/img/fast-dare.webp',
-        to: '/reto',
+        to: 'https://wa.me/message/GSQFJRMWMO76P1?src=qr',
         title: 'Échanos un reto!',
         description: '¿Qué tienes en mente? Te ayudamos a aterrizar tu idea y lo hacemos realidad. Contáctanos!'
     },
