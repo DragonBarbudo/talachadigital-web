@@ -25,8 +25,6 @@ export default defineNuxtConfig({
     'nuxt-umami',
     '@nuxt/icon',
     '@nuxt/image',
-    'nuxt-lazytube',
-    '@pinia/nuxt',
-    'nuxt-meta-pixel'
+    'nuxt-lazytube'
   ]
 })

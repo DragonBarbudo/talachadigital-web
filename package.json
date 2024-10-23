@@ -25,7 +25,6 @@
     "@nuxtjs/tailwindcss": "latest",
     "@pinia/nuxt": "^0.5.5",
     "@vueuse/nuxt": "latest",
-    "nuxt-meta-pixel": "^2.0.2",
     "nuxt-umami": "latest"
   }
 }
