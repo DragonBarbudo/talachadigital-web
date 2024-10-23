@@ -28,12 +28,5 @@ export default defineNuxtConfig({
     'nuxt-lazytube',
     '@pinia/nuxt',
     'nuxt-meta-pixel'
-  ],
-  runtimeConfig: {
-    public: {
-      metapixel: {
-        default: { id: '465289436560689'},
-      }
-    }
-  }
+  ]
 })
