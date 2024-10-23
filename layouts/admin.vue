@@ -1,0 +1,4 @@
+<template>
+    ADMIN!!!
+    <slot />
+</template>

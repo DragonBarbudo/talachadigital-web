@@ -25,6 +25,15 @@ export default defineNuxtConfig({
     'nuxt-umami',
     '@nuxt/icon',
     '@nuxt/image',
-    'nuxt-lazytube'
-  ]
+    'nuxt-lazytube',
+    '@pinia/nuxt',
+    'nuxt-meta-pixel'
+  ],
+  runtimeConfig: {
+    public: {
+      metapixel: {
+        default: { id: '465289436560689'},
+      }
+    }
+  }
 })
