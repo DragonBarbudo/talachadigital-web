@@ -1,7 +1,9 @@
 <script setup lang="ts">
 
-
+const colorMode = useColorMode()
 const route = useRoute()
+
+colorMode.value = 'light'
 
 useSeoMeta({
   ogTitle: 'Talacha Digital',

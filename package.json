@@ -20,11 +20,13 @@
   "devDependencies": {
     "@nuxt/icon": "latest",
     "@nuxt/image": "latest",
+    "@nuxt/ui": "^2.18.7",
     "@nuxtjs/google-fonts": "latest",
     "@nuxtjs/sitemap": "latest",
     "@nuxtjs/tailwindcss": "latest",
     "@pinia/nuxt": "^0.5.5",
     "@vueuse/nuxt": "latest",
+    "nuxt-clarity-analytics": "^0.0.9",
     "nuxt-umami": "latest"
   }
 }

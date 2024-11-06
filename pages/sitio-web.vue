@@ -171,6 +171,36 @@
  
  
  <script setup lang="ts">
+
+useSeoMeta({
+  ogTitle: 'Sitio Web en Talacha Digital',
+  ogDescription: 'Tu sitio personalizado te espera. Platícanos lo que necesitas y te lo armamos súper rápido.',
+  ogImage: '/img/ogimage.webp',
+  ogUrl: 'https://talachadigital.com/jingle',
+  twitterTitle: 'Jingle Musical',
+  twitterDescription: 'Haremos tu sitio web con las últimas tecnologías. Se verá padrísimo y funcionará excelentemente bien!',
+  twitterImage: '/img/ogimage.webp',
+  twitterCard: 'summary'
+})
+
+useHead({
+  title: 'Sitio Web en Talacha Digital',
+  htmlAttrs: {
+    lang: 'es'
+  },
+  meta: [
+    { name: 'description', content: 'Tu sitio personalizado te espera. Platícanos lo que necesitas y te lo armamos súper rápido.' }
+  ],
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon.png'
+    }
+  ]
+})
+
+
  const compare = [
     {
        desc: 'Pagos',

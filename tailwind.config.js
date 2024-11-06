@@ -2,6 +2,8 @@ module.exports = {
     content: [
         "./pages/**/*.{vue,js,ts}",
         "./components/**/*.{vue,js,ts}",
+        "./nuxt.config.{js,ts}", // Adds the Nuxt config file
+        "./node_modules/@nuxt/ui/dist/**/*.{js,vue,ts}" // Nuxt UI components
     ],
     theme: {
         extend: {

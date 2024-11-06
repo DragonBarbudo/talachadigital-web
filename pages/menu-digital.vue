@@ -179,6 +179,36 @@
 
 
 <script setup lang="ts">
+
+useSeoMeta({
+  ogTitle: 'Menú Digital en Talacha Digital',
+  ogDescription: 'Un menú digital para tu restaurante con cambios ilimitados.',
+  ogImage: '/img/ogimage.webp',
+  ogUrl: 'https://talachadigital.com/jingle',
+  twitterTitle: 'Jingle Musical',
+  twitterDescription: 'Menú Digital + Código QR + Panel para modificarlo.',
+  twitterImage: '/img/ogimage.webp',
+  twitterCard: 'summary'
+})
+
+useHead({
+  title: 'Menú Digital en Talacha Digital',
+  htmlAttrs: {
+    lang: 'es'
+  },
+  meta: [
+    { name: 'description', content: 'Un menú digital para tu restaurante con cambios ilimitados.' }
+  ],
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon.png'
+    }
+  ]
+})
+
+
 const compare = [
    {
       desc: 'Pagos',

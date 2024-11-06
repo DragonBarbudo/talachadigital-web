@@ -180,6 +180,36 @@
  
  
  <script setup lang="ts">
+
+useSeoMeta({
+  ogTitle: 'Jingle Musical en Talacha Digital',
+  ogDescription: 'Una canción sobre el tema que quieras: Promociona tu negocio o  celebra una ocasión especial.',
+  ogImage: '/img/ogimage.webp',
+  ogUrl: 'https://talachadigital.com/jingle',
+  twitterTitle: 'Jingle Musical',
+  twitterDescription: '3 canciones + 1 video para redes sociales',
+  twitterImage: '/img/ogimage.webp',
+  twitterCard: 'summary'
+})
+
+useHead({
+  title: 'Jingle Musical en Talacha Digital',
+  htmlAttrs: {
+    lang: 'es'
+  },
+  meta: [
+    { name: 'description', content: 'Una canción sobre el tema que quieras: Promociona tu negocio o  celebra una ocasión especial.' }
+  ],
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon.png'
+    }
+  ]
+})
+
+
  const compare = [
     {
        desc: 'Pagos',
