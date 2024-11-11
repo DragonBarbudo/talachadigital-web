@@ -27,6 +27,8 @@
     "@pinia/nuxt": "^0.5.5",
     "@vueuse/nuxt": "latest",
     "nuxt-clarity-analytics": "^0.0.9",
+    "nuxt-file-storage": "^0.2.9",
+    "nuxt-time": "^1.0.2",
     "nuxt-umami": "latest"
   }
 }

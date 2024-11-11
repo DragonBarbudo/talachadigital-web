@@ -36,6 +36,7 @@
 <script setup lang="ts">
 
 const pb = usePB('td');
+const authenticate = useAuthenticate()
 const router = useRouter();
 
 const state = reactive({
@@ -56,8 +57,14 @@ const onSubmit = async () => {
     state.errorMessage = '';
 
     try {
-        const authData = await pb.admins.authWithPassword(state.email, state.password);
-        router.push('/admin/dashboard');
+        
+        //const authData = await pb.admins.authWithPassword(state.email, state.password,  { cache: "no-store" });
+        let authData = await authenticate.auth(state.email, state.password)
+        if(authData){
+            router.push('/admin/dashboard');
+        } else {
+            state.errorMessage = "Inicio de sesión fallido. Verifica tus credenciales.";
+        }
 
     } catch (error) {
 

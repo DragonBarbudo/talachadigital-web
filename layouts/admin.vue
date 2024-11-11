@@ -1,14 +1,12 @@
 <template>
   <div class="flex flex-col h-screen">
-    <UHorizontalNavigation  :links="links" class="border-b border-gray-200 dark:border-gray-800 ">
-    </UHorizontalNavigation>
+    <UHorizontalNavigation  :links="links" class="border-b border-gray-200 dark:border-gray-800 " />
     <div class="p-2  grow ring overflow-auto">
       <div class=" h-full p-2">
         <slot />
       </div>
     </div>
-    
-    {{ isDark }}
+  
   </div>
 </template>
 
@@ -32,21 +30,26 @@ const isDark = computed({
 const links = [
   [
     {
-    label: 'Dashboard',
+    label: 'Dash',
     to: '/admin/dashboard'
   }, 
-    {
-    label: 'Jingles',
+  {
+    label: 'Client',
+    icon: 'i-fluent-person-circle-24-regular',
+    to: '/admin/clients'
+  }, 
+  {
+    label: 'Jingle',
     icon: 'i-fluent-music-note-2-play-20-regular',
     to: '/admin/jingles'
   }, 
   {
-    label: 'Menús',
+    label: 'Menu',
     icon: 'i-fluent-clipboard-task-list-24-regular',
     to: '/admin/menus'
   },
   {
-    label: 'Archivos',
+    label: 'File',
     icon: 'i-fluent-box-arrow-up-20-regular',
     to: '/admin/archivos'
   } 
@@ -58,7 +61,6 @@ const links = [
     }
   },
     {
-    label: 'Salir',
     icon: 'i-fluent:sign-out-20-regular',
     click:() => {
         logout()
