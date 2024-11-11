@@ -19,8 +19,8 @@
                     </vue-plyr>
                 </ClientOnly>
                 <template #footer>
-                    <div class="max-h-96 overflow-y-auto">
-                        <div class="text-sm p-2 whitespace-pre-wrap" v-html="item.lyrics"></div>
+                    <div class="max-h-48 overflow-y-auto p-2 font-patrick">
+                        <div class="text-base whitespace-pre-wrap" v-html="item.lyrics"></div>
                     </div>
                 </template>
             </UCard>
@@ -32,7 +32,7 @@
         project: Object
     })
 
-    console.log(props.project)
+
 
 const fileurl = (item) => {
   return `https://talachadigital.pockethost.io/api/files/${item.collectionId}/${item.id}/${item.file}`

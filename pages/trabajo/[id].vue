@@ -12,12 +12,16 @@
 
 </template>
 <script setup lang="ts">
+
 const route = useRoute()
 const pb = usePB()
 const colorMode = useColorMode()
+
 const props = defineProps({
     
 })
+
+
 
 
 const remapItem = (item) => {
@@ -37,6 +41,25 @@ const remapItem = (item) => {
 
 const record = await pb.collection('projects').getOne( route.params.id, { expand: 'storageJingles(owner), storageImg(owner), storageVideo(owner)'})
 const project = remapItem(record)
+
+useHead({
+  title: 'Tu '+project.work+' en Talacha Digital',
+  htmlAttrs: {
+    lang: 'es'
+  },
+  meta: [
+    { name: 'description', content: 'Aquí esta el proyecto que hemos estado trabajando! Esperamos que lo disfrutes.' }
+  ],
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon.png'
+    }
+  ]
+})
+
+
 
 
 </script>
