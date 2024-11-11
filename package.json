@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@iconify-json/fluent": "^1.2.7",
     "nuxt": "^3.13.0",
     "nuxt-lazytube": "^0.2.1",
     "pocketbase": "^0.21.5",

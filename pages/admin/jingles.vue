@@ -19,6 +19,9 @@
       <template #files-data="{ row }">
         <UBadge :label="row.files.length" variant="soft" color="primary" />
       </template>
+      <template #link-data="{ row }">
+        <UButton :to="`/trabajo/${row.id}`" target="_blank" label="View" />
+      </template>
       <!-- EXPAND -->
       <template #expand="{ row }">
         <div class="p-2 grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -67,6 +70,7 @@ const columns = [
   { key: 'amount', label: '$Due' },
   { key: 'created', label: 'Created' },
   { key: 'name', label: 'Name' },
+  { key: 'link', label: 'Link' },
   //{ key: 'files', label: 'Files' },
 ]
 

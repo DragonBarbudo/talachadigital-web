@@ -18,6 +18,11 @@
                         </audio>
                     </vue-plyr>
                 </ClientOnly>
+                <template #footer>
+                    <div class="max-h-96 overflow-y-auto">
+                        <div class="text-sm p-2 whitespace-pre-wrap" v-html="item.lyrics"></div>
+                    </div>
+                </template>
             </UCard>
         </div>
     </div>
@@ -26,7 +31,10 @@
     const props = defineProps({
         project: Object
     })
-    const fileurl = (item) => {
+
+    console.log(props.project)
+
+const fileurl = (item) => {
   return `https://talachadigital.pockethost.io/api/files/${item.collectionId}/${item.id}/${item.file}`
 }
 
