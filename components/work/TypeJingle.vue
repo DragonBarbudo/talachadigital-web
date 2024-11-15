@@ -5,27 +5,53 @@
             <div class="font-nerko text-6xl text-tdred">tus jingles</div>
         </h1>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 my-20">
-        <div v-for="(item, index) in project.jingles">
-            <UCard>
-                <template #header>
-                    <div class="font-gochi text-3xl ">{{ item.name }}</div>
-                </template>
-                <ClientOnly>
-                    <vue-plyr :options="ops(item)">
-                        <audio controls crossorigin playsinline>
-                            <source :src="fileurl(item)" type="audio/mp3"/>
-                        </audio>
-                    </vue-plyr>
-                </ClientOnly>
-                <template #footer>
-                    <div class="max-h-48 overflow-y-auto p-2 font-patrick">
-                        <div class="text-base whitespace-pre-wrap" v-html="item.lyrics"></div>
+
+
+    <div class="flex flex-col gap-5 my-20">
+            <UCard v-for="(item, index) in project.videos" class="border-2 border-tdgreen">
+                <div class="text-center">
+                    <div class="py-5 px-2">
+                        <div class="sticky top-0 flex flex-col gap-5">
+                            <div class="font-gochi text-5xl ">{{ item.name }}</div>
+                            <div class="w-fit mx-auto">
+                                <ClientOnly>
+                                    <vue-plyr :options="ops(item)" class="mx-auto p-2 rounded max-w-xl">
+                                        <video controls crossorigin playsinline>
+                                            <source :src="fileurl(item)" type="video/mp4"/>
+                                        </video>
+                                    </vue-plyr>
+                                </ClientOnly>
+                            </div>
+                        </div>
                     </div>
-                </template>
+                    <div class=" overflow-y-auto p-2 font-sans dark:text-tdgreen">
+                        <div class="text-lg whitespace-pre-wrap" v-html="item.lyrics"></div>
+                    </div>
+                </div>
             </UCard>
-        </div>
     </div>
+
+    <div class="flex flex-col gap-5 my-20">
+            <UCard v-for="(item, index) in project.jingles" class="border-2 border-tdgreen">
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <div class="py-5 px-2">
+                        <div class="sticky top-0 flex flex-col gap-5"><div class="font-gochi text-5xl ">{{ item.name }}</div>
+                            <ClientOnly>
+                                <vue-plyr :options="ops(item)">
+                                    <audio controls crossorigin playsinline>
+                                        <source :src="fileurl(item)" type="audio/mp3"/>
+                                    </audio>
+                                </vue-plyr>
+                            </ClientOnly>
+                        </div>
+                    </div>
+                    <div class=" overflow-y-auto p-2 font-sans dark:text-tdgreen">
+                        <div class="text-lg whitespace-pre-wrap" v-html="item.lyrics"></div>
+                    </div>
+                </div>
+            </UCard>
+    </div>
+
 </template>
 <script setup lang="ts">
     const props = defineProps({
