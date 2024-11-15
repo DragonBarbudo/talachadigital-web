@@ -10,7 +10,7 @@
         <div class="border-4 border-tdred rounded-t-xl max-w-4xl mx-auto mt-5 p-5">
             <div class="text-center font-nerko text-4xl">¡NOS ENCANTÓ TRABAJAR CONTIGO!</div>
             <div class="text-center font-nerko text-2xl">Esperamos seguir creando productos divertidos y funcionales para tí</div>
-            <div class="text-center font-nerko text-xl text-tdred">Nos vemos prónto.</div>
+            <div class="text-center font-nerko text-xl text-tdred">Nos vemos pronto.</div>
         </div>
         <div class="rounded-b-xl bg-tdred text-white dark:text-white max-w-4xl mx-auto mb-5 p-5">
             <div class="font-gochi text-center text-4xl">Descarga aquí tus Jingles</div>
