@@ -6,6 +6,35 @@
         </h1>
     </div>
 
+    <template v-if="project.amount-project.paid == 0">
+        <div class="border-4 border-tdred rounded-t-xl max-w-4xl mx-auto mt-5 p-5">
+            <div class="text-center font-nerko text-4xl">¡NOS ENCANTÓ TRABAJAR CONTIGO!</div>
+            <div class="text-center font-nerko text-2xl">Esperamos seguir creando productos divertidos y funcionales para tí</div>
+            <div class="text-center font-nerko text-xl text-tdred">Nos vemos prónto.</div>
+        </div>
+        <div class="rounded-b-xl bg-tdred text-white dark:text-white max-w-4xl mx-auto mb-5 p-5">
+            <div class="font-gochi text-center text-4xl">Descarga aquí tus Jingles</div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-10 text-center my-10">
+                <template v-for="(item, index) in project.videos">
+                    <UButton target="_blank" @click="downloadMe(fileurl(item))" color="white" icon="fluent:video-28-regular" :label="`${item.name} (.mp4)`">
+                        <template #trailing>
+                                <UIcon name="fluent:arrow-download-32-regular" class="w-5 h-5" />
+                        </template>
+                    </UButton>
+                </template>
+                <template v-for="(item, index) in project.jingles">
+                    <UButton target="_blank" @click="downloadMe(fileurl(item))" color="white" icon="fluent:music-note-2-16-regular" :label="`${item.name} (.mp3)`">
+                        <template #trailing>
+                                <UIcon name="fluent:arrow-download-32-regular" class="w-5 h-5" />
+                        </template>
+                    </UButton>
+                </template>
+            </div>
+        </div>
+
+
+    </template>
+
 
     <div class="flex flex-col gap-5 my-20">
             <UCard v-for="(item, index) in project.videos" class="border-2 border-tdgreen">
@@ -72,6 +101,15 @@ const ops = (item) => {
     }
     return op
 }
+
+const downloadMe = (theurl) => {
+    const link = document.createElement('a')
+    link.href = theurl
+    link.download = theurl
+    link.target = '_blank'
+    link.click()
+}
+
 </script>
 
 <style lang="postcss">
