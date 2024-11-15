@@ -197,7 +197,7 @@ const createnew = async () => {
         "owner": '',
         "notes": '',
     };
-    q.value = rName
+
     const record = await pb.collection('projects').create(data);
     loadItems()
 }

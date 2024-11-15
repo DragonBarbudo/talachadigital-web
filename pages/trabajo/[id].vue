@@ -15,13 +15,6 @@
 
 const route = useRoute()
 const pb = usePB()
-const colorMode = useColorMode()
-
-const props = defineProps({
-    
-})
-
-
 
 
 const remapItem = (item) => {
@@ -43,7 +36,7 @@ const record = await pb.collection('projects').getOne( route.params.id, { expand
 const project = remapItem(record)
 
 useHead({
-  title: 'Tu '+project.work+' en Talacha Digital',
+  title: project.name + ' | Tu '+project.work+' en Talacha Digital',
   htmlAttrs: {
     lang: 'es'
   },
@@ -54,10 +47,24 @@ useHead({
     {
       rel: 'icon',
       type: 'image/png',
-      href: '/favicon.png'
+      href: '/faviconJingle.png'
     }
   ]
 })
+
+
+
+
+
+
+const colorMode = useColorMode()
+
+const props = defineProps({
+    
+})
+
+
+
 
 
 
