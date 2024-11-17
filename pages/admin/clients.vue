@@ -104,7 +104,7 @@ const createnew = async () => {
         "name": randomname,
         "phone": "+52"
     };
-    q.value = randomname
+
     const record = await pb.collection('users').create(data);
     loadItems()
 }

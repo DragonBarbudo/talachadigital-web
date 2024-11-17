@@ -8,9 +8,12 @@
                 <UInput required v-model="jingle.name" />
             </UFormGroup>
             <UFormGroup label="Lyrics" class="col-span-3">
-                <UTextarea autoresize :maxrows="5" v-model="jingle.lyrics" />
+                <UTextarea autoresize :maxrows="15" v-model="jingle.lyrics" />
+                <div class="text-right mt-1">
+                    <UButton size="2xs" variant="outline" color="teal" @click="removeBrackets">Remove tags</UButton>
+                </div>
             </UFormGroup>
-            <audio controls :src="fileurl()"></audio>
+            <audio class="w-full" controls :src="fileurl()"></audio>
         </div>
         <template #footer>
             <div class="flex gap-2">
@@ -38,6 +41,9 @@ const fileurl = () => {
   return `https://talachadigital.pockethost.io/api/files/${props.item.collectionId}/${props.item.id}/${props.item.file}`
 }
 
+const removeBrackets = () => {
+    jingle.value.lyrics = jingle.value.lyrics.replace(/\[.*?\]\n?/g, '');
+}
 
 const deleteConfirmation = ref(false)
 const deleteFN = async () => {
@@ -55,5 +61,6 @@ const saveFN = async () => {
     const record = await pb.collection('storageJingles').update(props.item.id, jingle.value);
     loading.value = false
 }
+
 
 </script>

@@ -67,6 +67,8 @@ const saveFN = async () => {
         amount: props.row.amount,
         paid: props.row.paid,
         status: props.row.status,
+        owner: props.row.owner,
+        notes: props.row.notes
     });
     loading.value = false
 }

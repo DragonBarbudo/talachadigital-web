@@ -69,7 +69,7 @@ const uploadFiles = async (thefiles) => {
     const formData = new FormData();
     formData.append('file', file);
     formData.append('owner', props.rowId)
-    formData.append('name', randomName())
+    formData.append('name', props.rowName)
     //formData.append('lyrics', '---')
     await createRecordAndUpload(formData, collectionName);
   }

@@ -33,12 +33,14 @@
               <AdminJingleFileEditor  v-for="(item, index) in row.jingles" :key="item.id" :item="item" :index="index" :jingles="row.jingles"/>
           </div>
         </UCard>
-        <UCard class="col-span-3">
-          <template #header>Images</template>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <!--
+          <UCard class="col-span-3">
+            <template #header>Images</template>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
               <AdminJingleFileImgVideoEditor v-for="(item, index) in row.imgs" :key="item.id" :item="item" :index="index" :items="row.imgs" type="img" />
-          </div>
-        </UCard>
+            </div>
+          </UCard>
+          -->
         <UCard class="col-span-3">
           <template #header>Videos</template>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
