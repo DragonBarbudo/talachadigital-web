@@ -14,7 +14,7 @@
         <!--<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-5 gap-5">-->
         <div class="flex flex-wrap justify-center p-5 gap-5">
           
-            <NuxtLink :to="item.to" class="w-96 shadow-2xl group transition-all hover:scale-110 border-b-4 border-b-black rounded-xl  bg-tdgreen p-1  hover:bg-tdred hover:text-tdgreen "  v-for="(item, index) in links">
+            <NuxtLink :to="item.to" class="w-96 shadow-2xl group transition-all hover:scale-110 border-b-4 border-b-black rounded-xl  bg-tdgreen dark:text-black p-1  hover:bg-tdred hover:text-tdgreen "  v-for="(item, index) in links">
                     <div class="bg-black/10 transition-all delay-100 h-full p-1 flex gap-2 items-center rounded-lg border-4 border-black shadow-sm group-hover:bg-black">
                         <NuxtImg :src="item.img" class="w-11/12  aspect-square object-contain"/>
                         <div>
@@ -30,12 +30,14 @@
 
 <script setup lang="ts">
 const links = [
-    {
+/*    
+{
         img: '/img/fast-menu.webp',
         to: '/menu-digital',
         title: 'Menú digital para tu restaurante',
         description: 'Un moderno menú digital con tu personalizad que podrás actualizar infinitamente.'
     },
+    */
     {
         img: '/img/fast-jingle.webp',
         to: '/jingle',

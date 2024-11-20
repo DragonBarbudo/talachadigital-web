@@ -40,7 +40,7 @@ useHead({
   
   <!--head-->
   <div class="relative z-50">
-    <div class="bg-tdgreen p-5 text-center">
+    <div class="bg-tdgreen dark:text-black p-5 text-center">
       <NuxtImg src="/img/talachadigital.svg" class="mx-auto w-2/3 max-w-60" />
       <div class="font-nerko max-w-xl text-2xl md:text-4xl mx-auto my-5 leading-5 md:leading-8">
         chambeamos todo en web, diseño, video, audio y otras variedades
@@ -59,7 +59,7 @@ useHead({
     
   </HomeBackgroundVideo>
 
-  <div class="bg-tdgreen  w-full flex justify-center flex-col gap-2 px-5 py-20 relative">
+  <div class="bg-tdgreen dark:text-black  w-full flex justify-center flex-col gap-2 px-5 py-20 relative">
 
     <HomeWeDo></HomeWeDo>
 
