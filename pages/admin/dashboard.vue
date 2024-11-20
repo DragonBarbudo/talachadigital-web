@@ -1,5 +1,5 @@
 <template>
-   <div class="grid grid-cols-4 gap-5">
+   <div class="grid  md:grid-cols-4 gap-5">
     <UCard v-for="(item, index) in links"  :class="`border-2 border${item.color}`">
       
       <div v-html="item.label" />

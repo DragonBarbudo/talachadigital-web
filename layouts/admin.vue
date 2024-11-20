@@ -43,6 +43,7 @@ const links = [
     icon: 'i-fluent-music-note-2-play-20-regular',
     to: '/admin/jingles'
   }, 
+  /*
   {
     label: 'Menu',
     icon: 'i-fluent-clipboard-task-list-24-regular',
@@ -53,6 +54,7 @@ const links = [
     icon: 'i-fluent-box-arrow-up-20-regular',
     to: '/admin/archivos'
   } 
+    */
   ], [
     {
     icon: 'i-fluent-weather-sunny-low-20-regular',

@@ -21,4 +21,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [//'@nuxtjs/tailwindcss',
   '@nuxtjs/google-fonts', '@vueuse/nuxt', '@nuxtjs/sitemap', 'nuxt-umami', '@nuxt/icon', '@nuxt/image', 'nuxt-lazytube', '@nuxt/ui', 'nuxt-clarity-analytics', 'nuxt-time', 'nuxt-file-storage'],
+  icon: {
+    serverBundle: {
+      collections: ['fluent']
+    }
+  }
 })
