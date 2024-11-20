@@ -51,7 +51,7 @@
     </template>
 
 
-    <div class="gap-5 my-20 grid " :class="project.videos.length==1?'md:grid-cols-1':'md:grid-cols-2'">
+    <div class="gap-5 my-20 grid " :class="project?.videos?.length==1?'md:grid-cols-1':'md:grid-cols-2'">
             <UCard v-for="(item, index) in project.videos" class="border-2 border-tdgreen">
                 <div class="text-center">
                     <div class="py-5 px-2">
