@@ -52,7 +52,7 @@
 
 
     <div class="gap-5 my-20 grid " :class="project?.videos?.length==1?'md:grid-cols-1':'md:grid-cols-2'">
-            <UCard v-for="(item, index) in project.videos" class="border-2 border-tdgreen">
+            <UCard v-for="(item, index) in project?.videos" class="border-2 border-tdgreen">
                 <div class="text-center">
                     <div class="py-5 px-2">
                         <div class="sticky top-0 flex flex-col gap-5">
@@ -76,7 +76,7 @@
     </div>
 
     <div class="flex flex-col gap-5 my-20">
-            <UCard v-for="(item, index) in project.jingles" class="border-2 border-tdgreen">
+            <UCard v-for="(item, index) in project?.jingles" class="border-2 border-tdgreen">
                 <div class="grid sm:grid-cols-2 gap-5">
                     <div class="py-5 px-2">
                         <div class="sticky top-0 flex flex-col gap-5"><div class="font-gochi text-5xl ">{{ item.name }}</div>
