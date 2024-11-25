@@ -1,56 +1,51 @@
 <template>
-    <div class="bg-tdgreen w-full">
-       <NuxtLink to="/" class=" p-2 text-center cursor-pointer group">
-          <NuxtImg src="/img/talachadigital.svg" class="mx-auto max-w-32 group-hover:scale-110" />
-       </NuxtLink>
-    </div>
-    <div class="bg-tdgreen py-20 px-2  flex justify-center items-center">
-       <div class="grid grid-cols-2 gap-1 items-center w-fit mx-auto">
-          <div class="aspect-square">
-             <NuxtImg src="/img/jingle/jingle.webp" width="480" height="480" class="w-full" />
-          </div>
-          <div class="font-nerko shrink flex flex-col dark:text-black">
-             <div class="text-3xl md:text-6xl w-fit">Jingle Musical</div>
-             <div class="font-gochi text-2xl md:text-5xl w-fit">3 opciones de canción</div>
-             <div class="font-gochi text-2xl md:text-5xl w-fit"><span class="text-tdred">+</span> un video para tus redes sociales</div>
-          </div>
-       </div>
-    </div>
+<section class="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+   <MainHeadBar class="md:col-span-3" />
 
- 
-    <section class="px-5 py-10 ">
-       <div class="text-center font-gochi text-5xl md:text-8xl">¿Cómo es un jingle?</div>
-       <div class="text-center font-patrick text-2xl my-5">
-          Es una canción sobre el tema que tu quieras, puede ser sobre tu negocio, una historia o de un evento especial. 
-       </div>
- 
- 
-       <div class="grid max-w-3xl mx-auto md:grid-cols-2 gap-1">
- 
- <div class=" text-center p-3 flex flex-col gap-5">
-    <div class="font-nerko text-2xl md:text-3xl leading-5">Para un día especial</div>
-    <LazyYoutube src="https://www.youtube.com/watch?v=x6_-LDgkw_4" class="mx-auto" />
-    <div class="font-nerko text-2xl md:text-3xl leading-5">En una ocasión importante</div>
-    <LazyYoutube src="https://www.youtube.com/watch?v=n1HXmQc7-xA" class="mx-auto" />
-    
-    <div class="font-patrick text-lg leading-5">Tu elije el mejor momento, mándanos tus ideas y nosotros lo transformaremos en una melodía que reflejará todo lo que necesites.</div>
-</div>
-<div class=" text-center p-3 flex flex-col gap-5">
-    <div class="font-nerko text-2xl md:text-3xl leading-5">Para dar a conocer un tema</div>
-    <LazyYoutube src="https://www.youtube.com/watch?v=6Liy9yPGqrA" class="mx-auto" />
-    <div class="font-nerko text-2xl md:text-3xl leading-5">Promocional de tu negocio</div>
-    <LazyYoutube src="https://www.youtube.com/watch?v=_mqwqtVgKZc" class="mx-auto" />
+   <div class="containerbox bg-tdblue text-white">
+      <div class="flex flex-col gap-5">
+         <h1 class="font-nerko text-4xl md:text-5xl">Jingle Musical</h1>
+         <h2 class="font-nerko text-tdgreen text-3xl md:text-4xl">Para negocios</h2>
+         <p class="font-patrick text-white text-xl md:text-2xl">Que te recuerden tus clientes con una canción pegajoza y que nunca se olviden de ti.</p>
+         <h2 class="font-nerko text-tdgreen text-3xl md:text-4xl">Para ocasiones especiales</h2>
+         <p class="font-patrick text-white text-xl md:text-2xl">Canciones de amor, para la familia, infantiles, temáticas y de cualquier tipo.</p>
+      </div>
+   </div>
 
-    <div class="font-patrick text-lg leading-5">No lo dudes... una jingle es el mejor método actual para transmitir un mensaje de forma memorable.</div>
- </div>
+   <div class="containerbox bg-tdblue text-white md:col-span-2 flex flex-col items-center">
+      <div class="aspect-square max-w-sm">
+         <NuxtImg src="/img/jingle/jingle.webp" width="480" height="480" class="w-full" />
+      </div>
+      <div class="font-patrick text-3xl md:text-5xl w-fit">3 opciones de canción</div>
+      <div class="font-patrick text-2xl md:text-5xl w-fit"><span class="text-tdred">+</span> un video para tus redes sociales</div>
+      <div class="font-patrick text-xl opacity-70 mt-2">(Y al final te entregamos todo: 3 canciones .mp3 y el video en .mp4)</div>
+   </div>
+</section>
 
-</div>
- 
 
-    </section>
- 
- 
- 
+
+<section class="max-w-7xl mx-auto px-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5">
+   <div class="col-span-2 md:col-span-3 lg:col-span-4 text-4xl text-center py-5 font-nerko">Chécate estos ejemplos:</div>
+   
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=PUK2x5BgT2o" class="w-full h-full" /></div>
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=1OAWzwXRP4Q" class="w-full h-full" /></div>
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=zxJ_jWzve1M" class="w-full h-full" /></div>
+   
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=7xBUdr1Y2GY" class="w-full h-full" /></div>
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=kUkazJViAos" class="w-full h-full" /></div>
+   
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=R0RAl4JSoIM" class="w-full h-full" /></div>
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=hIQSNdlFYmA" class="w-full h-full" /></div>
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=c0B6mgL2toY" class="w-full h-full" /></div>
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=XVAMJLxCEO4" class="w-full h-full" /></div>
+   
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=0ifpOG-rQ-c" class="w-full h-full" /></div>
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=6Liy9yPGqrA" class="w-full h-full" /></div>
+   <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=_mqwqtVgKZc" class="w-full h-full" /></div>
+</section>
+
+   
+
     <section class=" px-5 py-10 ">
        <div class="text-center font-gochi text-5xl md:text-8xl">¿Cuál es el proceso... y cuánto cuesta?</div>
        <div class="text-center font-patrick text-2xl my-5">

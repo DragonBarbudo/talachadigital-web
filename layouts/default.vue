@@ -1,12 +1,11 @@
 <template>
     <ContactBar />
     <TopBar />
+    <div class="mt-5">
+      <slot />
+    </div>
+    <HomeOurSocials />
 
-    <slot />
-
-
-
-    <HomeOurSocials></HomeOurSocials>
 
 
 <!--footer-->
