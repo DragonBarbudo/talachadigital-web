@@ -1,12 +1,15 @@
 <template>
+
     <ClientOnly>
     <div class="flex justify-between" v-if="!fed">
       <!-- Draggable Snack -->
       <div
-        class="snack cursor-grab animated-snack"
+        class="snack cursor-grab "
+        :class="moveSnackClass"
         draggable="true"
         @dragstart="handleDragStart"
         @dragend="handleDragEnd"
+        @click="movesnack"
       >
         <NuxtImg
           width="240"
@@ -38,7 +41,7 @@
 
     </div>
 
-    <div class="flex justify-between" v-if="!fed">
+    <div class="flex justify-between mt-5" v-if="!fed">
        <div class="bg-black font-patrick text-xl w-fit px-4 py-1 rounded mx-auto cursor-pointer hover:bg-tdpink" @click="jumpFed">Saltar alimentación y pedir mi jingle</div>
     </div>
 
@@ -50,14 +53,20 @@
 </ClientOnly>
   </template>
   
-  <script setup lang="ts">
 
+  
+  <script setup lang="ts">
+if (process.client){ 
+   import("@/assets/dragdroptouch.js")
+}
   
   // State to track the current image
   const snackdogImage = ref("/snackdog_1.webp");
   const snackdogClass = ref('');
+  const moveSnackClass = ref('animated-snack');
   const fed = ref(false)
   const jumped = ref(false)
+
   
   // Event handlers
   const handleDragStart = (event: DragEvent) => {
@@ -83,6 +92,18 @@
     snackdogImage.value = "/snackdog_1.webp";
     snackdogClass.value = 'scale-100'
   };
+
+
+  const movesnack = () => {
+    moveSnackClass.value = 'transition-all duration-1000'
+    snackdogImage.value = "/snackdog_2.webp";
+    setTimeout(()=>{
+        moveSnackClass.value += '  translate-x-44 translate-y-20 md:translate-x-96'
+        setTimeout(()=>{
+            fed.value = true
+        },1000)
+    }, 100)
+  }
   </script>
 
 

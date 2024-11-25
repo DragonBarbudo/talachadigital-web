@@ -78,6 +78,8 @@
  
  <script setup lang="ts">
 
+
+
 useSeoMeta({
   ogTitle: 'Jingle Musical en Talacha Digital',
   ogDescription: 'Una canción sobre el tema que quieras: Promociona tu negocio o  celebra una ocasión especial.',
@@ -103,20 +105,10 @@ useHead({
       type: 'image/png',
       href: '/favicon.png'
     }
+  ],
+  script: [
   ]
 })
 
 
- const compare = [
-    {
-       desc: 'Pagos',
-       v1: '1 solo pago',
-       v2: 'Anual'
-    },
-    {
-       desc: 'Precio',
-       v1: '$700',
-       v2: '$1,700'
-    }
- ]
  </script>
