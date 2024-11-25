@@ -44,37 +44,28 @@
    <div class="containerbox aspect-square bg-tdblue overflow-hidden !p-0"><LazyYoutube src="https://www.youtube.com/watch?v=_mqwqtVgKZc" class="w-full h-full" /></div>
 </section>
 
-   
 
-    <section class=" px-5 py-10 ">
-       <div class="text-center font-gochi text-5xl md:text-8xl">¿Cuál es el proceso... y cuánto cuesta?</div>
-       <div class="text-center font-patrick text-2xl my-5">
-         ¡Súuuper! Planear tu jingle es facilísimo. 
+<section class="max-w-7xl mx-auto px-5  gap-5 mt-5">
+<div class="containerbox bg-tdblue text-white">
+
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="flex flex-col gap-5">
+         <h3 class="font-nerko text-tdgreen text-3xl md:text-4xl">¿Cuánto tiempo y cuantos dineros cuesta?</h3>
+         <p class="font-patrick text-white text-xl md:text-2xl">Uno de estos maravillosos jingles nos toma de 1 a 2 días y tiene un costo de sólo <strong class="text-tdred font-nerko">$600 mxn</strong></p>
+         <p class="font-patrick text-white text-xl md:text-2xl">Para comenzar te pedimos el 50% y a la entrega el restante.</p>
+         <p class="font-patrick text-white text-xl md:text-2xl">Nuestros Jingles son únicos y 100% tuyos, por lo que si quieres tenerlo protegido, también ofrecemos la opción de registrarlos ante el Registro Público del Derecho de Autor.</p>
       </div>
-      <div class="grid md:grid-cols-2 gap-4   p-5  font-patrick text-xl md:text-3xl">
-        <div class="bg-tdgreen dark:bg-slate-800 p-5">
+      <div class="flex justify-center items-center"><NuxtImg width="379" height="421"  src="/img/dog_money.webp" class="max-w-60 mx-auto" /></div>
+   </div>
+</div>
+</section>
 
-        <div class="font-gochi">Platícanos qué ideas tienes para tu jingle.</div>
-        <ul class="my-5">
-            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" />¿De qué tratará?.</li>
-            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" />Ritmo y género musical.</li>
-            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" />Frases, ideas, o algo específico que quieras en la letra.</li>
-            <li><Icon name="ph:dot-fill" class="text-tdred align-middle" />Fotos e imagenes para integrar en tu video.</li>
-         </ul>
-         <div class="font-gochi">Y nosotros te mandaremos 3 opciones de canción y un video.</div>
-        </div> 
-         <div class="bg-tdgreen dark:bg-slate-800 flex flex-col">
-            <div class="h-1/2 p-5 ">
-               Comencemos con tus ideas a través de <NuxtLink class="text-tdred hover:text-black" href="https://wa.me/message/GSQFJRMWMO76P1?src=qr" target="_blank">Whatsapp</NuxtLink> y en un día tendremos listo tu canción!
-            </div>
-            <div class="grow bg-black text-white p-5 ">
-               El precio durante la etapa de introducción es de <span class="font-nerko text-tdgreen">$600 pesos mexicanos</span>  y puedes pagar el día que te entreguemos.
-            </div>
+<section class="max-w-7xl mx-auto px-5  gap-5 mt-5">
+   <JingleForm />
+</section>
 
-         </div>
-      </div>
-    </section>
- 
+
+
     
     <div class="m-10 text-center">
        <NuxtImg src="/img/menu-digital/expert.webp" class="mx-auto" />
