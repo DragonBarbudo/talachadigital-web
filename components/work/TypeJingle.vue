@@ -15,7 +15,7 @@
         <div class="rounded-b-xl bg-tdred text-white dark:text-white max-w-4xl mx-auto mb-5 p-5">
             <div class="font-gochi text-center text-4xl">Descarga aquí tus Jingles</div>
             <div class="my-10 flex flex-col gap-4">
-                <template v-for="(item, index) in project.videos.concat(project.jingles)">
+                <template v-for="(item, index) in fullItems">
                     <div class="grid md:grid-cols-2 gap-10 items-center p-3 rounded bg-slate-800/10  outline-1 outline-dashed">
                         <div class=" flex gap-2 items-center">
 
@@ -108,6 +108,15 @@
     const props = defineProps({
         project: Object
     })
+
+    const fullItems = ref([])
+    if(props.project?.videos){
+        fullItems.value = fullItems.value.concat(props.project?.videos)
+    }
+    if(props.project?.jingles){
+        fullItems.value = fullItems.value.concat(props.project?.jingles)
+    }
+
 
 
     const loading = ref(false)

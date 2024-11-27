@@ -76,7 +76,7 @@ useHead({
       <div class="containerbox bg-tdblue text-tdgreen col-span-5 flex flex-col md:flex-row justify-between relative items-center ">
         <div class="flex flex-col gap-5">
           <h2 class="font-nerko text-4xl md:text-4xl">Para negocios</h2>
-          <p class="font-patrick text-white text-2xl md:text-3xl">Que te recuerden tus clientes con una canción pegajoza y que nunca se olviden de ti.</p>
+          <p class="font-patrick text-white text-2xl md:text-3xl">Que te recuerden tus clientes con una canción pegajosa y que nunca se olviden de ti.</p>
           <h2 class="font-nerko text-4xl md:text-5xl">Para ocasiones especiales</h2>
           <p class="font-patrick text-white text-2xl md:text-3xl">Canciones de amor, para la familia, infantiles, temáticas y de cualquier tipo.</p>
           <NuxtLink to="/jingle" class="mx-auto my-6 containerbutton">púshale aquí</NuxtLink>

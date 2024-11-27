@@ -42,7 +42,7 @@ const links = [
         img: '/img/fast-jingle.webp',
         to: '/jingle',
         title: 'Jingle musical',
-        description: 'Que te recuerden tus clientes con una canción pegajoza y nunca se olviden de ti.'
+        description: 'Que te recuerden tus clientes con una canción pegajosa y nunca se olviden de ti.'
     },
     {
         img: '/img/fast-web.webp',
