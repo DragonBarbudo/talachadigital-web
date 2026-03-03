@@ -1,3 +1,0 @@
-<template>
-    Tu marca...
-</template>
